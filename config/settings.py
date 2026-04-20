@@ -120,3 +120,7 @@ import os
 
 SECRET_KEY = os.environ.get('SECRET_KEY', 'fallback-secret')
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://django-devops-lab2.onrender.com"
+]
